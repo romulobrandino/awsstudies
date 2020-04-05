@@ -1,0 +1,40 @@
+Some commands that I use frequently on my projects
+
+$ whoami
+$ uname -a or just uname -v check the options w/ --help
+$ touch xyzname.xyznameextension (touch example.txt)
+Checking your instance metadata
+$ curl http://169.254.169.254/latest/meta-data/
+$ curl http://169.254.169.254/latest/meta-data/instance-action
+
+Some TAGs example tag/value
+project:server1
+name:value
+------------------------------------------------------------------------------
+- S3
+$ aws s3 ls 
+$ aws s3 mb <bucketname>
+$ aws s3 cp /path/to/file.txt s3://bucketname
+
+Using CLI the s3 address is something like that 
+s3://bucketname/file 
+
+Deleting a bucket using CLI
+$ aws s3 rb s3://bucket-name --force  
+
+
+S3 http address examples:
+https://myversionromulobrandinotest.s3.amazonaws.com/150610144402-texas-best-economy-780x439.jpg 
+https://<bucketname>.s3.amazonaws.com/<filename>
+https://s3.amazonaws.com/bucketname/filename 
+http://bucket-name.s3-website.Region.amazonaws.com
+
+Example — Requesting an Object at the Root Level:
+http://bucket-name.s3-website.Region.amazonaws.com/object-name
+
+
+------------------------------------------------------------------------------
+aws ec2 run-instances --image-id ami-xxxxxxxx --count 1 \ --instance-type t2.micro --key-name MyKeyPair \ --security-group-ids sg-xxxxxxxx --subnet-id subnet-xxxxxxxx \
+--user-data file://my_script.sh \ --tag-specifications \ 'ResourceType=instance,Tags=[{Key=webserver,Value=production}]' \
+'ResourceType=volume,Tags=[{Key=cost-center,Value=cc123}]'
+
