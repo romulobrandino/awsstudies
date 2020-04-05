@@ -2,6 +2,8 @@ Some commands that I use frequently on my projects
 
 $ whoami
 $ uname -a or just uname -v check the options w/ --help
+$ dmesg | head -1
+cat /proc/version
 $ touch xyzname.xyznameextension (touch example.txt)
 Checking your instance metadata
 $ curl http://169.254.169.254/latest/meta-data/
