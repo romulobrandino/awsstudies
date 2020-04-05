@@ -1,0 +1,34 @@
+Create a codecommit repository, clone and push it
+
+documentation
+https://docs.aws.amazon.com/codecommit/latest/userguide/getting-started.html
+
+When you create a codecommit repo, first you need to create a security credential to the user (IAM user)
+IAM > Users > User > Security Credential > HTTPS Git credentials for AWS CodeCommit
+Generate credentials > Saved (If you don't save it, game over man! Cannot retrieve it.)
+
+Create the repository
+Codecommit > Create repository > Repository name (IaCtemplates)
+Copy the address to clone
+example: https://git-codecommit.<region>.amazonaws.com/v1/repos/<repositoryname>
+example: https://git-codecommit.us-west-2.amazonaws.com/v1/repos/xyz9281792871928798
+
+On you machine
+git clone https://git-codecommit.<region>.amazonaws.com/v1/repos/<repositoryname>
+enter HTTPS credentials you created on IAM users
+Username: xxxxxxxyyyyyyzzzz
+Password: xxxxxxxyyyyyyzzzz
+
+Using git
+create some files, ex: touch blablabla.txt ou nano hanakajoe.txt etc
+git --version 
+git status
+git commit -m "Adding some files to my repository"
+git add . or git add <filename>
+git push
+
+
+A best practice instead of use HTTPS credential, use SSH connections to AWS codecommit
+documentation https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-ssh-unixes.html
+
+
