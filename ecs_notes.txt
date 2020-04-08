@@ -74,8 +74,4 @@ A JSON-formatted text file that contains the "blueprint" for your application, i
 Each container should have only one concern. 
 Decoupling applications into multiple containers makes it easier to scale horizontally and reuse containers. 
 For instance, a web application stack might consist of three separate containers, each with its own unique image, to manage the web application, database, 
-and in-memory cache in a decoupled manner. 
-
-
-
-
+and in-memory cache in a decoupled manner.
