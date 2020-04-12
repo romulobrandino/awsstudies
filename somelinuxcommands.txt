@@ -1,5 +1,15 @@
 Some commands that I use frequently on my projects
 
+Get public IP address of current EC2 instance
+$ curl http://169.254.169.254/latest/meta-data/local-ipv4
+
+And, to get public IPv4, run:
+$ curl http://169.254.169.254/latest/meta-data/public-ipv4
+$ curl http://checkip.amazonaws.com
+
+For EC2 instance try the following (feel free to replace {YOUR_ID_HERE} with actual EC2 instance ID):
+$ aws ec2 describe-instances --instance-ids {YOUR_ID_HERE} --query 'Reservations[*].Instances[*].PublicIpAddress' --output text
+
 $ whoami
 $ uname -a or just uname -v check the options w/ --help
 $ dmesg | head -1
