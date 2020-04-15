@@ -15,6 +15,7 @@ https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec
 https://github.com/devteds/e7-cloudformation-docker
 https://github.com/devteds/e9-cloudformation-docker-ecs
 
+
 1) Macros - For more information about macros, see the following resources.
 https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-macros.html
 2) AWS Labs macro examples
