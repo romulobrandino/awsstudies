@@ -1,3 +1,3 @@
 # awsstudies
-Some txt files, some notes of my AWS studies and labs. 
+Some notes of my AWS studies, labs, projects. 
 
