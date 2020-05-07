@@ -7,8 +7,4 @@ Solution:
 In Ubuntu for example
 
 `sudo ntpdate ntp.ubuntu.com`
-
 ``sudo apt-get install ntp``
-
-Code 	`Insert Code` 	cout<<"Hello world";
-Code block/ Syntax highlighting 	```insert code```
