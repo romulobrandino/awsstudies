@@ -3,8 +3,8 @@
 fatal error: An error occurred (RequestTimeTooSkewed) when calling the ListObjectsV2 operation: 
 The difference between the request time and the current time is too large.
 
-Solution:
-In Ubuntu for example
+You need to update the time on the AWS server and Local machine. Best way to do is to run ntpdate command to sync time.
 
-`sudo ntpdate ntp.ubuntu.com`
-``sudo apt-get install ntp``
+Solution:
+
+`sudo ntpdate -u in.pool.ntp.org`
