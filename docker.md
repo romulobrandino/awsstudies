@@ -38,3 +38,12 @@ Cleanup by removing the stopped container
 Remove the downloaded centos image
 
 `docker rmi centos`
+
+
+
+
+
+
+
+[https://www.udemy.com/learn-docker](https://www.udemy.com/learn-docker)
+https://github.com/PacktPublishing/Docker-for-the-Absolute-Beginner---Hands-On
